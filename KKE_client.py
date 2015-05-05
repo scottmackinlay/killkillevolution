@@ -187,4 +187,4 @@ else:
 		c = Client(host, int(port))
 		while c.running and view.living:
 			c.Loop()
-			sleep(0.0001)
+			sleep(0.01)
