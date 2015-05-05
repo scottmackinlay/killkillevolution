@@ -4,7 +4,8 @@ Softdes Final project
 You need pygame to play this game: 
     $sudo apt-get install python.pygame
 
-The code is run as follows: 
+The code is run as follows
+
 1.  Open a terminal window and find your IP
         $ ifconfig
     The IP youre interested in is in the wlan0 section under inet addr (eg: 10.2.43.128)
