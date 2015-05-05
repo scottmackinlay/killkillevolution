@@ -4,6 +4,7 @@ from sys import stdin, exit
 from PodSixNet.Connection import connection, ConnectionListener
 from thread import *
 from pygame.locals import *
+import random
 
 class Client(ConnectionListener):
 	'''
@@ -100,6 +101,7 @@ class View(object):
 		self.DARKGREEN= (   0, 255,    0)
 		self.RED      = ( 255,   0,   0)
 		self.GREY	  = (200, 200, 200)
+		self.RAND 	  = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
 		self.size=(900,700)
 		os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (50,50)
 		self.screen   = pygame.display.set_mode(self.size)

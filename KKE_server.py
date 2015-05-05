@@ -186,9 +186,11 @@ class Zombie(object):
 			#if a player dies, restart the game:
 			if closestPlayer.health<0:
 				model.score=0
+				model.popCap=10
 				model.zombieList=[]
 				model.regZomb=Standard()
 				for players in model.players:
+					player.pos=[screenSize[0]/2,screenSize[1]/2]
 					players.health=5
 
 		'''collision detection for bullets'''
